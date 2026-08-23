@@ -135,6 +135,56 @@
     color:#766a61;
     line-height:1.5;
   }
+
+  html{scroll-behavior:smooth}
+  section.day{scroll-margin-top:16px}
+  .day-quick-nav{
+    margin:18px 0 20px;
+    padding:14px;
+    border:1px solid #e3e7ed;
+    border-radius:14px;
+    background:#fff;
+  }
+  .day-quick-nav-title{
+    font-weight:800;
+    margin-bottom:10px;
+    color:#4e463f;
+  }
+  .day-quick-nav-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .day-jump-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:76px;
+    padding:9px 13px;
+    border:1px solid #d9dee6;
+    border-radius:10px;
+    background:#f8f9fb;
+    color:#463f39;
+    text-decoration:none;
+    font-weight:700;
+    transition:background .15s ease,border-color .15s ease,transform .15s ease;
+  }
+  .day-jump-btn:hover{
+    background:#eef2f7;
+    border-color:#c8d0db;
+    transform:translateY(-1px);
+  }
+  @media (max-width:640px){
+    .day-quick-nav-buttons{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+    }
+    .day-jump-btn{
+      min-width:0;
+      width:100%;
+      box-sizing:border-box;
+    }
+  }
   .footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
 
   .timeline li > div:nth-child(2).with-map{
@@ -204,13 +254,13 @@
 <span class="tag bonus">備案 / 視體力</span>
 </div>
 </section>
-<section class="day">
+<nav aria-label="每日快速導覽" class="day-quick-nav"><div class="day-quick-nav-title">📅 每日快速導覽</div><div class="day-quick-nav-buttons"><a class="day-jump-btn" href="#day1">Day 1</a><a class="day-jump-btn" href="#day2">Day 2</a><a class="day-jump-btn" href="#day3">Day 3</a><a class="day-jump-btn" href="#day4">Day 4</a><a class="day-jump-btn" href="#day5">Day 5</a><a class="day-jump-btn" href="#day6">Day 6</a></div></nav><section class="day" id="day1">
 <h2>Day 1｜10/22（四）</h2>
 <div class="day-title">✈️ 抵達福岡・博多散步</div>
 <ul class="timeline">
 <li><div class="time">06:35</div><div><span class="item-content"><strong>抵達桃園機場</strong><br/><span class="rule-note">預約｜機場接送</span></span></div></li><li><div class="time">09:35</div><div>星宇 JX840 台灣出發</div></li>
 <li><div class="time">約13:00</div><div>抵達福岡 → 前往飯店</div></li>
-<li><div class="time">下午</div><div class="with-map"><span class="item-content"><strong>THE FULL FULL HAKATA </strong> 明太子麵包<br/><span class="rule-note">📌 LINE 預約｜10/22 取貨；最早可於 10/7 23:00（台灣時間）開始預約。已設定當晚 23:00 提醒。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=THE%20FULL%20FULL%20HAKATA%20Fukuoka" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<li><div class="time">下午</div><div class="with-map"><span class="item-content"><strong>THE FULL FULL HAKATA</strong>｜明太子麵包<div class="sub-note">預約：10/22 取貨；最早可於 10/7 23:00（台灣時間）開始預約。店家規則：外帶購買，目前未查到最低消費。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=THE%20FULL%20FULL%20HAKATA%20Fukuoka" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li>
@@ -218,7 +268,7 @@
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li>
-<li><div class="time">18:15</div><div class="with-map"><span class="item-content"><span class="tag ok">已確定</span> <strong>壽喜燒 山翔</strong>｜2+4 兩組訂位<br/><span class="rule-note">⚠ 店家規則｜目前公開的 ¥8,000／¥10,000／¥15,000 套餐皆包含無限暢飲；請以實際預訂方案為準。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%99%E3%81%8D%E7%84%BC%E3%81%8D%E5%B1%B1%E7%BF%94%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E7%A5%87%E5%9C%92%E7%94%BA6-24" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<li><div class="time">18:15</div><div class="with-map"><span class="item-content"><span class="tag ok">已訂位</span> <strong>壽喜燒 山翔</strong>｜2+4 兩組｜<strong>¥8,000 套餐</strong><div class="sub-note">店家規則：已預訂 ¥8,000 套餐，包含無限暢飲。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%99%E3%81%8D%E7%84%BC%E3%81%8D%E5%B1%B1%E7%BF%94%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E7%A5%87%E5%9C%92%E7%94%BA6-24" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li>
@@ -228,11 +278,11 @@
 </svg></a></div></li>
 </ul>
 </section>
-<section class="day">
+<section class="day" id="day2">
 <h2>Day 2｜10/23（五）</h2>
 <div class="day-title">⚓ 宮地嶽・門司港・小倉城・皿倉山</div>
 <div class="note">交通：包車｜小倉城不是必去，不為了它趕行程</div>
-<ul class="timeline"><li><div class="time">09:30</div><div class="with-map"><span class="item-content">MIGNON 小可頌<br/><span class="rule-note">⚠ 店家規則｜外帶麵包店，不接受預約；未查到低消規定。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9F%E3%83%8B%E3%83%A8%E3%83%B3%20%E5%8D%9A%E5%A4%9A%E9%A7%85" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<ul class="timeline"><li><div class="time">09:30</div><div class="with-map"><span class="item-content"><strong>MIGNON 博多站</strong>｜小可頌<div class="sub-note">店家規則：外帶，不接受預約；目前未查到最低消費。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9F%E3%83%8B%E3%83%A8%E3%83%B3%20%E5%8D%9A%E5%A4%9A%E9%A7%85" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li><li><div class="time">10:15</div><div><span class="item-content">飯店包車出發</span></div></li><li><div class="time">約11:00–11:40</div><div class="with-map"><span class="item-content">宮地嶽神社</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AE%AE%E5%9C%B0%E5%B6%BD%E7%A5%9E%E7%A4%BE%20%E7%A6%8F%E6%B4%A5%E5%B8%82" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
@@ -241,7 +291,7 @@
 </svg></a></div></li><li><div class="time">約12:45</div><div class="with-map"><span class="item-content">抵達門司港</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%96%80%E5%8F%B8%E6%B8%AF%E3%83%AC%E3%83%88%E3%83%AD%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">13:00–14:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已決定</span> <strong>Princess Phi Phi プリンセスピピ門司港</strong>｜燒咖哩<br/><span class="rule-note">⚠ 店家規則｜午餐時段不接受只預約座位，原則上需現場候位；目前未查到最低消費、每人一杯飲料或座位費。若候位較久，可改看 15:00 的 Blue Wing 開橋。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BB%E3%82%B9%E3%83%94%E3%83%94%20%E9%96%80%E5%8F%B8%E6%B8%AF%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA%E8%A5%BF%E6%B5%B7%E5%B2%B81-4-7" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">13:00–14:00</div><div class="with-map"><span class="item-content"><span class="tag pending">待預約</span> <strong>Princess Phi Phi</strong>｜焼き咖哩午餐<div class="sub-note">預約規則：一般只訂座位不接受；週五～週日限定可預約別邸「Princess Lalala」套餐，提供 11:00／13:00／18:00 時段。10/23（五）可預約，需選套餐。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BB%E3%82%B9%E3%83%94%E3%83%94%20%E9%96%80%E5%8F%B8%E6%B8%AF%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA%E8%A5%BF%E6%B5%B7%E5%B2%B81-4-7" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li><li><div class="time">14:00</div><div class="with-map"><span class="item-content"><strong>Blue Wing Moji 看開橋</strong><br/><span class="note">目前固定開橋時段含 14:00，約 20 分鐘後閉合</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%96%E3%83%AB%E3%83%BC%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%82%E3%81%98%20%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA%E6%B8%AF%E7%94%BA4-1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
@@ -259,42 +309,39 @@
 </svg></a></div></li><li><div class="time">約14:55–15:05</div><div><span class="item-content">包車前往和布刈神社</span></div></li><li><div class="time">約15:05–15:30</div><div class="with-map"><span class="item-content"><strong>和布刈神社・鳥居</strong>｜關門海峽＋關門橋拍照</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%92%8C%E5%B8%83%E5%88%88%E7%A5%9E%E7%A4%BE%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E9%96%80%E5%8F%B8%E5%8C%BA%E9%96%80%E5%8F%B83492" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">約15:30</div><div><span class="item-content">離開和布刈神社</span></div></li><li><div class="time">16:15–16:20</div><div class="with-map"><span class="item-content"><strong>抵達皿倉山纜車山麓站</strong>｜包車送達</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9A%BF%E5%80%89%E5%B1%B1%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB%E3%82%AB%E3%83%BC%E5%B1%B1%E9%BA%93%E9%A7%85%20%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E5%85%AB%E5%B9%A1%E6%9D%B1%E5%8C%BA%E5%A4%A7%E5%AD%97%E5%B0%BE%E5%80%891481-1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">約15:30</div><div><span class="item-content">離開和布刈神社</span></div></li><li><div class="time">16:15–16:20</div><div class="with-map"><span class="item-content"><strong>抵達皿倉山纜車山麓站</strong>｜包車送達</span><a aria-label="在 Google Maps 開啟皿倉山纜車山麓站" class="map-link" href="https://maps.app.goo.gl/w9GU4n9TB1XW2R3X7?g_st=ipc" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li><li><div class="time">16:20–16:40</div><div><span class="item-content">買票／洗手間／排隊｜預留約 20 分鐘緩衝</span></div></li><li><div class="time">16:40</div><div><span class="item-content"><strong>搭皿倉山纜車</strong>｜山麓站 → 山上站，車程約 6 分鐘</span></div></li><li><div class="time">約16:46</div><div><span class="item-content">抵達山上站｜準備轉乘斜坡車</span></div></li><li><div class="time">16:48</div><div><span class="item-content"><strong>斜坡車第一目標班次</strong>｜山上站 → 展望台站，約 3 分鐘</span><div class="sub-note">備註：若 16:48 客滿／未接上，改搭 17:08，約 17:11 抵達山頂。</div></div></li><li><div class="time">約16:51</div><div class="with-map"><span class="item-content"><strong>抵達皿倉山展望台站（山頂）</strong></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9A%BF%E5%80%89%E5%B1%B1%E5%B1%95%E6%9C%9B%E5%8F%B0%20%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">約17:30</div><div><span class="item-content">🌅 <strong>看夕陽</strong></span></div></li><li><div class="time">17:30–18:20</div><div><span class="item-content">欣賞黃昏轉夜景</span></div></li><li><div class="time">18:20–18:30</div><div><span class="item-content">準備離開展望台，前往斜坡車月台</span></div></li><li><div class="time">18:33</div><div><span class="item-content"><strong>斜坡車下山</strong>｜展望台站 → 山上站</span><div class="sub-note">備註：若 18:33 客滿／未接上，改搭下一班斜坡車；下山整體預留至約 19:00～19:10 回到山麓站。</div></div></li><li><div class="time">約18:36</div><div><span class="item-content">抵達山上站，等候纜車</span></div></li><li><div class="time">18:40</div><div><span class="item-content"><strong>纜車下山</strong>｜山上站 → 山麓站</span></div></li><li><div class="time">約18:46</div><div><span class="item-content"><strong>回到皿倉山山麓站</strong></span></div></li><li><div class="time">約20:30–21:30</div><div class="with-map"><span class="item-content"><span class="tag ok">已安排</span> <strong>Shin Shin 博多店</strong>｜拉麵<br/><span class="rule-note">⚠ 店家規則｜目前未查到最低消費、每人一杯飲料或座位費；以現場候位為主。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%20ShinShin%20%E5%8D%9A%E5%A4%9A%E3%83%87%E3%82%A4%E3%83%88%E3%82%B9%E5%BA%97%20%E7%A6%8F%E5%B2%A1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">約17:30</div><div><span class="item-content">🌅 <strong>看夕陽</strong></span></div></li><li><div class="time">17:30–18:20</div><div><span class="item-content">欣賞黃昏轉夜景</span></div></li><li><div class="time">18:20–18:30</div><div><span class="item-content">準備離開展望台，前往斜坡車月台</span></div></li><li><div class="time">18:33</div><div><span class="item-content"><strong>斜坡車下山</strong>｜展望台站 → 山上站</span><div class="sub-note">備註：若 18:33 客滿／未接上，改搭下一班斜坡車；下山整體預留至約 19:00～19:10 回到山麓站。</div></div></li><li><div class="time">約18:36</div><div><span class="item-content">抵達山上站，等候纜車</span></div></li><li><div class="time">18:40</div><div><span class="item-content"><strong>纜車下山</strong>｜山上站 → 山麓站</span></div></li><li><div class="time">約18:46</div><div><span class="item-content"><strong>回到皿倉山山麓站</strong></span></div></li><li><div class="time">約20:30–21:30</div><div class="with-map"><span class="item-content"><strong>Shin Shin 博多店</strong>｜拉麵<div class="sub-note">店家規則：目前未查到最低消費、每人一杯飲料或座位費；以現場候位為主。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%9A%E5%A4%9A%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%20ShinShin%20%E5%8D%9A%E5%A4%9A%E3%83%87%E3%82%A4%E3%83%88%E3%82%B9%E5%BA%97%20%E7%A6%8F%E5%B2%A1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li></ul>
 <div class="rain-plan"><div class="rain-plan-title">🌧️ 雨天備案｜取消皿倉山</div><div class="note">若皿倉山下雨、低雲或山頂能見度差，正常皿倉山行程整段取消，改走以下路線。</div><div class="rain-plan-row"><div class="rain-time">約16:00後</div><div><strong>小倉城</strong>｜室內參觀</div><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E5%80%89%E5%9F%8E%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle></svg></a></div><div class="rain-plan-row"><div class="rain-time">之後</div><div><strong>Riverwalk 北九州</strong>｜逛街、休息、吃東西，再返回博多</div><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%AA%E3%83%90%E3%83%BC%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF%E5%8C%97%E4%B9%9D%E5%B7%9E%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E5%B0%8F%E5%80%89%E5%8C%97%E5%8C%BA%E5%AE%A4%E7%94%BA1-1-1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle></svg></a></div></div><div class="priority"><strong>皿倉山時間原則：</strong>不要把轉乘當成零等待。16:15～16:20 抵達山麓站，目標搭 16:40 纜車；斜坡車以 16:48 為第一目標，客滿則保留 17:08 備用班次。下山以 18:33 斜坡車＋18:40 纜車為目標，並預留人潮延誤至 19:10 左右。</div>
 </section>
-<section class="day">
+<section class="day" id="day3">
 <h2>Day 3｜10/24（六）</h2>
-<div class="day-title">🍚 食堂 おわん・天神・鰻魚飯・Pixel Tree</div>
-<ul class="timeline"><li><div class="time">08:00–09:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已安排</span> <strong>食堂 おわん</strong>｜早餐<br/><span class="rule-note">⚠ 店家規則｜早餐 07:30–11:30，可線上預約；6 人建議先預約。早餐時段不可使用信用卡，早餐御膳目前約 ¥2,500／¥3,500。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A3%9F%E5%A0%82%20%E3%81%8A%E3%82%8F%E3%82%93%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%86%B7%E6%B3%89%E7%94%BA9-20" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<div class="day-title">🍚 食堂 おわん・mina 天神・Pixel Tree・海木・Kawaya Gion</div>
+<ul class="timeline"><li><div class="time">10:30–11:30</div><div class="with-map"><span class="item-content"><span class="tag ok">已訂位</span> <strong>食堂 おわん</strong>｜5 位｜<strong>¥2,500 套餐 × 5</strong><div class="sub-note">店家規則：早餐時段無法刷信用卡；建議準備現金或依現場可用付款方式結帳。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A3%9F%E5%A0%82%20%E3%81%8A%E3%82%8F%E3%82%93%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%86%B7%E6%B3%89%E7%94%BA9-20" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">上午</div><div><span class="item-content">回飯店休息／附近散步，行程放慢</span></div></li><li><div class="time">13:00–14:00</div><div><span class="item-content"><span class="tag wait">待選擇</span> <strong>鰻魚飯</strong>｜店家待選</span></div></li><li><div class="time">14:00後</div><div class="with-map"><span class="item-content">天神逛街・3COINS</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=3COINS%20%E5%A4%A9%E7%A5%9E%20%E7%A6%8F%E5%B2%A1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">11:30–12:00</div><div><span class="item-content">前往天神・mina 天神｜移動＋等車緩衝</span></div></li><li><div class="time">約12:00–14:30</div><div class="with-map"><span class="item-content"><strong>天神逛街・mina 天神</strong><div class="sub-note">重點店家：B1 3COINS+plus／松本清、1–2F UNIQLO、3F GU、4F Loft、5F ABC-MART、6F Seria／NITORI EXPRESS、7F BOOKOFF SUPER BAZAAR／GiGO。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9F%E3%83%BC%E3%83%8A%E5%A4%A9%E7%A5%9E%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E4%E4%B8%81%E7%9B%AE3%E7%95%AA8%E5%8F%B7" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">下午</div><div class="with-map"><span class="item-content">ONE FUKUOKA BLDG. Pixel Tree</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=ONE%20FUKUOKA%20BLDG%20%E7%A6%8F%E5%B2%A1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">約14:30–15:00</div><div class="with-map"><span class="item-content"><strong>ONE FUKUOKA BLDG｜Pixel Tree</strong>｜順路拍照／逛逛</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=ONE%20FUKUOKA%20BLDG%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E1%E4%B8%81%E7%9B%AE11-1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">下午</div><div class="with-map"><span class="item-content">海木豆皮壽司／下午點心｜視肚子狀況<br/><span class="rule-note">⚠ 店家規則｜外帶店；福岡本店可提前 1 週電話預約，也接受當日預約與直接購買，但可能候位／售完。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%A0%E3%81%97%E3%81%84%E3%81%AA%E3%82%8A%20%E6%B5%B7%E6%9C%A8%20%E7%A6%8F%E5%B2%A1%E6%9C%AC%E5%BA%97" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">約15:15–15:45</div><div class="with-map"><span class="item-content"><span class="tag ok">要吃</span> <strong>海木豆皮壽司</strong>｜逛完街後購買<div class="sub-note">店家規則：外帶；可提前 1 週／當日電話預約，也可直接購買，熱門時段可能售完。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B5%B7%E6%9C%A8%20%E3%81%A0%E3%81%97%E3%81%84%E3%81%AA%E3%82%8A%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%B8%A1%E8%BE%BA%E9%80%9A1%E4%B8%81%E7%9B%AE9-3" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">下午</div><div class="with-map"><span class="item-content"><span class="tag bonus">視體力</span> 大濠公園</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A4%A7%E6%BF%A0%E5%85%AC%E5%9C%92%20%E7%A6%8F%E5%B2%A1%E5%B8%82" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
-<path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
-<circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">17:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已確定</span> <strong>Kawaya Gion</strong>｜少量雞皮串＋飲料<br/><span class="rule-note">⚠ 店家規則｜每人至少點 1 杯飲料，另收每人 ¥300 開胃小菜費；6 人合計開胃小菜費為 ¥1,800。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8B%E3%82%8F%E5%B1%8B%20%E7%A5%87%E5%9C%92%E5%BA%97%20%E7%A6%8F%E5%B2%A1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">17:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已訂位</span> <strong>Kawaya Gion</strong>｜晚餐<div class="sub-note">店家規則：每人至少點 1 杯飲料，另收每人 ¥300 開胃小菜費；6 人合計 ¥1,800。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8B%E3%82%8F%E5%B1%8B%20%E7%A5%87%E5%9C%92%E5%BA%97%20%E7%A6%8F%E5%B2%A1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li><li><div class="time">晚上</div><div><span class="item-content">博多車站逛街／一蘭總店表演視情況</span></div></li></ul>
 </section>
-<section class="day">
+<section class="day" id="day4">
 <h2>Day 4｜10/25（日）</h2>
 <div class="day-title">🤖 巨大鋼彈・糸島・福岡塔夕陽・狐狸神社</div>
 <div class="note">交通：包車</div>
@@ -307,7 +354,7 @@
 </svg></a></div></li><li><div class="time">約12:00</div><div class="with-map"><span class="item-content">二見浦夫妻岩</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A1%9C%E4%BA%95%E4%BA%8C%E8%A6%8B%E3%83%B6%E6%B5%A6%20%E5%A4%AB%E5%A9%A6%E5%B2%A9%20%E7%B3%B8%E5%B3%B6" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">12:30–14:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已決定</span> <strong>SEVEN x SEVEN 糸島</strong>｜午餐＋看海<br/><span class="rule-note">⚠ 店家規則｜目前公開資訊顯示一般用餐不接受預約；未查到最低消費或每人一杯飲料規定。週日 6 人請預留候位時間。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=seven%20x%20seven%20%E7%B3%B8%E5%B3%B6" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">12:30–14:00</div><div class="with-map"><span class="item-content"><strong>SEVEN x SEVEN 糸島</strong>｜午餐＋看海<div class="sub-note">店家規則：目前公開資訊顯示一般用餐不接受預約；未查到最低消費或每人一杯飲料規定。週日 6 人建議預留候位時間。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=seven%20x%20seven%20%E7%B3%B8%E5%B3%B6" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li><li><div class="time">14:00–15:00</div><div><span class="item-content">糸島自由安排／咖啡／小景點</span></div></li><li><div class="time">約15:00</div><div><span class="item-content">開始往福岡市區</span></div></li><li><div class="time">16:30</div><div class="with-map"><span class="item-content">福岡塔</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A6%8F%E5%B2%A1%E3%82%BF%E3%83%AF%E3%83%BC%20%E7%A6%8F%E5%B2%A1%E5%B8%82" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
@@ -319,17 +366,17 @@
 </svg></a></div></li><li><div class="time">約18:00</div><div><span class="item-content">離開福岡塔</span></div></li><li><div class="time">18:15–18:45</div><div class="with-map"><span class="item-content"><strong>中司孫太郎稻荷神社</strong>｜投幣點燈＋拍照</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E5%8F%B8%E5%AD%AB%E5%A4%AA%E9%83%8E%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%20%E7%A6%8F%E5%B2%A1%E5%B8%82" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">約19:30後</div><div class="with-map"><span class="item-content"><span class="tag ok">已安排</span> <strong>麵屋兼虎 博多站</strong>｜晚餐<br/><span class="rule-note">⚠ 店家規則｜不接受預約，店內約 18 席；未查到最低消費或每人一杯飲料規定，尖峰時段以現場排隊為主。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BA%BA%E3%82%84%E5%85%BC%E8%99%8E%20%E5%8D%9A%E5%A4%9A%E3%83%87%E3%82%A4%E3%83%88%E3%82%B9%E5%BA%97" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">約19:30後</div><div class="with-map"><span class="item-content"><strong>麵屋兼虎 博多站</strong>｜晚餐<div class="sub-note">店家規則：不接受預約，店內約 18 席；目前未查到最低消費或每人一杯飲料規定，尖峰時段以現場排隊為主。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BA%BA%E3%82%84%E5%85%BC%E8%99%8E%20%E5%8D%9A%E5%A4%9A%E3%83%87%E3%82%A4%E3%83%88%E3%82%B9%E5%BA%97" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li></ul>
 </section>
-<section class="day">
+<section class="day" id="day5">
 <h2>Day 5｜10/26（一）</h2>
 <div class="day-title">⛩️ 武藏天神店・太宰府・Full Full 天神取貨・肉之山翔</div>
 <ul class="timeline">
 <li><div class="time">10:15</div><div><span class="item-content"><strong>飯店出發</strong>｜前往天神</span></div></li>
-<li><div class="time">11:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已安排</span> <strong>黑毛和牛 博多和牛まぶし 武藏 天神店</strong><br/><span class="rule-note">⚠ 店家規則｜每人至少需點 1 份餐點；6 人原則上需點 6 份。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BB%92%E6%AF%9B%E5%92%8C%E7%89%9B%20%E5%8D%9A%E5%A4%9A%E5%92%8C%E7%89%9B%E3%81%BE%E3%81%B6%E3%81%97%20%E6%AD%A6%E8%94%B5%20%E5%A4%A9%E7%A5%9E%E5%BA%97" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<li><div class="time">11:00</div><div class="with-map"><span class="item-content"><span class="tag pending">待預約</span> <strong>黒毛和牛 博多牛まぶし 武蔵 天神店</strong>｜11:00 午餐<div class="sub-note">店家規則：可預約；每人至少需點 1 份餐點，無服務費／座位費。預計使用網路預約，待 10/26 日期開放後立即預訂。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BB%92%E6%AF%9B%E5%92%8C%E7%89%9B%20%E5%8D%9A%E5%A4%9A%E5%92%8C%E7%89%9B%E3%81%BE%E3%81%B6%E3%81%97%20%E6%AD%A6%E8%94%B5%20%E5%A4%A9%E7%A5%9E%E5%BA%97" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li>
@@ -339,23 +386,23 @@
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li>
 <li><div class="time">約16:00–17:00</div><div>返回福岡</div></li>
-<li><div class="time">約17:30–18:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已決定</span> <strong>Full Full パンとワイン（天神店）</strong>｜取回台麵包<br/><span class="rule-note">⚠ 店家規則｜外帶購買，未查到低消；可電話預留麵包。週二公休，10/26（一）可安排取貨。</span><br/><span class="rule-note">📌 LINE 預約｜10/26 取貨；最早可於 10/11 23:00（台灣時間）開始預約。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Full%20Full%20%E3%83%91%E3%83%B3%E3%81%A8%E3%83%AF%E3%82%A4%E3%83%B3%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E3-3-5" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<li><div class="time">約17:30–18:00</div><div class="with-map"><span class="item-content"><strong>Full Full パンとワイン 天神店</strong>｜取貨<div class="sub-note">預約：10/26 取貨；最早可於 10/11 23:00（台灣時間）開始預約。店家規則：外帶，目前未查到最低消費；可預留麵包。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Full%20Full%20%E3%83%91%E3%83%B3%E3%81%A8%E3%83%AF%E3%82%A4%E3%83%B3%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A9%E7%A5%9E3-3-5" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li>
-<li><div class="time">19:15</div><div class="with-map"><span class="item-content"><span class="tag ok">已安排</span> <strong>肉之山翔</strong>｜晚餐<br/><span class="rule-note">⚠ 店家規則｜目前未查到最低消費、每人一杯飲料或開胃小菜費；可只預約座位。19:15 入店不受晚間縮短用餐時間限制；當日取消可能收取餐費。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%82%89%E3%81%AE%E5%B1%B1%E7%BF%94%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E5%90%8D1-1-17" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<li><div class="time">19:15</div><div class="with-map"><span class="item-content"><span class="tag ok">已訂位</span> <strong>肉之山翔</strong>｜晚餐<div class="sub-note">店家規則：目前未查到最低消費、每人一杯飲料或開胃小菜費；19:15 入店不受晚間縮短用餐時間限制，當日取消可能收取餐費。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%82%89%E3%81%AE%E5%B1%B1%E7%BF%94%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%A4%A7%E5%90%8D1-1-17" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li>
 </ul>
 </section>
-<section class="day">
+<section class="day" id="day6">
 <h2>Day 6｜10/27（二）</h2>
 <div class="day-title">🍜 Menya ISHII・最後採買・FUK COFFEE・返台</div>
-<ul class="timeline"><li><div class="time">10:00前</div><div><span class="item-content">Check-out，<strong>行李寄放飯店</strong></span></div></li><li><div class="time">10:30–11:30</div><div class="with-map"><span class="item-content"><span class="tag ok">已安排</span> <strong>Menya ISHII（麺屋いしヰ）</strong>｜午餐<br/><span class="rule-note">⚠ 店家規則｜每人至少需點 1 碗麵。快速通關券每人 ¥390、且不退款；單筆最多 5 人，6 人需分開購買，並需全員到齊後才能入場。遲到超過 15 分鐘可能失去優先資格。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BA%BA%E5%B1%8B%E3%81%84%E3%81%97%E3%83%B0%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D3-9-5" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+<ul class="timeline"><li><div class="time">10:00前</div><div><span class="item-content">Check-out，<strong>行李寄放飯店</strong></span></div></li><li><div class="time">10:30–11:30</div><div class="with-map"><span class="item-content"><span class="tag pending">待預約</span> <strong>Menya ISHII（麺屋いしヰ）</strong>｜FastPass<div class="sub-note">預約規則：10/27 用餐可自 10/13 起預訂；¥390／人。每筆最多 5 人，6 人需拆成 5+1；每人需點 1 碗麵，FastPass 不是座位保證，遲到 15 分鐘可能失去優先資格。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BA%BA%E5%B1%8B%E3%81%84%E3%81%97%E3%83%B0%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E5%89%8D3-9-5" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
-</svg></a></div></li><li><div class="time">11:30–14:00</div><div><span class="item-content"><strong>博多站／天神最後採買</strong>｜伴手禮、甜點、自由逛街</span></div></li><li><div class="time">14:15–15:00</div><div class="with-map"><span class="item-content"><span class="tag ok">已安排</span> <strong>FUK COFFEE</strong>｜旅程最後一杯咖啡<br/><span class="rule-note">⚠ 店家規則｜祇園本店官方頁面未明確標示最低消費；是否需每人點 1 杯飲料尚無法完全確認。建議先以每人 1 杯估算，現場再確認。</span></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=FUK%20COFFEE%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E7%A5%87%E5%9C%92%E7%94%BA6-22" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+</svg></a></div></li><li><div class="time">11:30–14:00</div><div><span class="item-content"><strong>博多站／天神最後採買</strong>｜伴手禮、甜點、自由逛街</span></div></li><li><div class="time">14:15–15:00</div><div class="with-map"><span class="item-content"><strong>FUK COFFEE</strong>｜旅程最後一杯咖啡<div class="sub-note">店家規則：祇園本店官方頁面未明確標示最低消費；是否需每人點 1 杯尚無法完全確認，先以每人 1 杯估算並於現場確認。</div></span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=FUK%20COFFEE%20%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E7%A5%87%E5%9C%92%E7%94%BA6-22" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
 <path d="M12 21s6-5.15 6-11a6 6 0 1 0-12 0c0 5.85 6 11 6 11Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path>
 <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
 </svg></a></div></li><li><div class="time">約15:10–15:30</div><div class="with-map"><span class="item-content">返回 Via Inn Hakataguchi Ekimae</span><a aria-label="在 Google Maps 開啟" class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=VIA%20INN%20%E5%8D%9A%E5%A4%9A%E5%8F%A3%E9%A7%85%E5%89%8D%20%E7%A6%8F%E5%B2%A1" rel="noopener" target="_blank" title="Google Maps"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
@@ -373,17 +420,7 @@
 </svg></a></div></li><li><div class="time">19:10</div><div><span class="item-content">星宇 JX841 返回台灣</span></div></li></ul>
 <div class="priority"><strong>Day 6 原則：</strong>退房後行李一路寄放飯店；Menya ISHII、最後採買與 FUK COFFEE 結束後才回飯店取行李，再直接前往機場。</div>
 </section>
-<section class="food">
-<h2>🍴 待選擇店家</h2>
-<table>
-<thead>
-<tr><th>日期</th><th>餐次</th><th>建議區域</th></tr>
-</thead>
-<tbody>
-<tr><td>10/24 Day 3</td><td>午餐</td><td>鰻魚飯｜店家待選</td></tr></tbody>
-</table>
-</section>
-<section class="rules"><h2>⚠️ 店家用餐規則整理</h2><div class="note">規則確認日：2026/08/17｜依店家官方／訂位平台公開資訊整理；現場規則仍可能臨時調整。</div><table><thead><tr><th>店家</th><th>目前確認規則</th><th>6 人注意事項</th></tr></thead><tbody><tr><td>THE FULL FULL HAKATA</td><td>外帶購買；未查到低消</td><td>Day 1 正常購買即可</td></tr><tr><td>壽喜燒 山翔</td><td>目前公開的 ¥8,000／¥10,000／¥15,000 套餐皆包含無限暢飲</td><td>請以實際預訂的套餐方案為準</td></tr><tr><td>MIGNON 博多站</td><td>外帶；不接受預約</td><td>直接排隊購買</td></tr><tr><td>Princess Phi Phi 門司港</td><td>午餐時段不接受只預約座位；目前未查到最低消費、每人一杯飲料或座位費</td><td>6 人需現場候位；若等候較久，可改看 15:00 的 Blue Wing 開橋</td></tr><tr><td>Shin Shin 博多店</td><td>目前未查到低消／一人一杯／席料</td><td>以現場候位為主</td></tr><tr><td>食堂 おわん</td><td>早餐時段 07:30–11:30，可預約；早餐時段不可使用信用卡</td><td>6 人建議事先預約；早餐御膳目前約 ¥2,500／¥3,500</td></tr><tr><td>鰻魚飯</td><td>店家尚未決定</td><td>選店後再確認</td></tr><tr><td>海木</td><td>外帶；可提前 1 週／當日電話預約，也可直接購買</td><td>可能候位或售完</td></tr><tr><td>Kawaya Gion</td><td>每人至少點 1 杯飲料，另收每人 ¥300 開胃小菜費</td><td>6 人的開胃小菜費合計為 ¥1,800</td></tr><tr><td>SEVEN x SEVEN 糸島</td><td>目前公開資訊顯示一般用餐不接受預約；未查到最低消費或每人一杯飲料規定</td><td>週日 6 人用餐建議預留候位時間</td></tr><tr><td>麵屋兼虎 博多站</td><td>不接受預約；店內約 18 席；未查到最低消費或每人一杯飲料規定</td><td>尖峰時段以現場排隊為主</td></tr><tr><td>黑毛和牛 博多和牛まぶし 武藏 天神店</td><td>每人至少需點 1 份餐點</td><td>6 人原則上需點 6 份餐點</td></tr><tr><td>Full Full パンとワイン 天神店</td><td>外帶；未查到低消；可電話預留麵包</td><td>10/26（一）營業，週二公休</td></tr><tr><td>肉之山翔</td><td>目前未查到最低消費、每人一杯飲料或開胃小菜費；可只預約座位</td><td>19:15 入店不受晚間縮短用餐時間限制；當日取消可能收取餐費</td></tr><tr><td>Menya ISHII</td><td>每人至少需點 1 碗麵；快速通關券每人 ¥390，且不退款</td><td>單筆最多 5 人，6 人需分開購買；所有人到齊後才能入場</td></tr><tr><td>FUK COFFEE</td><td>祇園本店官方頁面未明確標示最低消費；是否需每人點 1 杯飲料尚無法完全確認</td><td>建議先以每人點 1 杯飲料估算，現場再確認</td></tr></tbody></table></section><div class="footer">Fukuoka Trip Plan｜Updated 2026/08/19｜Version 1.17</div>
+<section class="rules"><h2>⚠️ 店家用餐規則整理</h2><div class="note">規則確認日：2026/08/17｜依店家官方／訂位平台公開資訊整理；現場規則仍可能臨時調整。</div><table><thead><tr><th>店家</th><th>目前確認規則</th><th>6 人注意事項</th></tr></thead><tbody><tr><td>THE FULL FULL HAKATA</td><td>外帶購買；未查到低消</td><td>Day 1 正常購買即可</td></tr><tr><td>壽喜燒 山翔</td><td>已訂位：<strong>¥8,000 套餐</strong>；套餐包含無限暢飲。</td><td>6 人分成 2+4 兩組訂位；依已預訂的 ¥8,000 套餐用餐。</td></tr><tr><td>MIGNON 博多站</td><td>外帶；不接受預約</td><td>直接排隊購買</td></tr><tr><td>Princess Phi Phi 門司港</td><td>一般只訂座位不接受；週五～週日限定可預約別邸「Princess Lalala」套餐，提供 11:00／13:00／18:00 時段。10/23（五）可預約，需選套餐。</td><td>若要 13:00 訂位，需預約別邸套餐；無聯絡遲到 15 分鐘可能視為取消。</td></tr><tr><td>Shin Shin 博多店</td><td>目前未查到低消／一人一杯／席料</td><td>以現場候位為主</td></tr><tr><td>食堂 おわん</td><td><strong>已訂位。</strong> 10:30，5 位；¥2,500 套餐 × 5。早餐時段無法刷信用卡。</td><td>早餐結帳請準備現金；5 位皆為 ¥2,500 套餐。</td></tr><tr><td>海木</td><td>外帶；可提前 1 週／當日電話預約，也可直接購買</td><td>可能候位或售完</td></tr><tr><td>Kawaya Gion</td><td><strong>已訂位。</strong> 每人至少點 1 杯飲料，另收每人 ¥300 開胃小菜費</td><td>6 人的開胃小菜費合計為 ¥1,800</td></tr><tr><td>SEVEN x SEVEN 糸島</td><td>目前公開資訊顯示一般用餐不接受預約；未查到最低消費或每人一杯飲料規定</td><td>週日 6 人用餐建議預留候位時間</td></tr><tr><td>麵屋兼虎 博多站</td><td>不接受預約；店內約 18 席；未查到最低消費或每人一杯飲料規定</td><td>尖峰時段以現場排隊為主</td></tr><tr><td>黑毛和牛 博多和牛まぶし 武藏 天神店</td><td>可預約；每人至少需點 1 份餐點，無服務費／座位費。預計使用網路預約。</td><td>6 人原則上需點 6 份；待 10/26 日期開放後立即預訂。</td></tr><tr><td>Full Full パンとワイン 天神店</td><td>外帶；未查到低消；可電話預留麵包</td><td>10/26（一）營業，週二公休</td></tr><tr><td>肉之山翔</td><td><strong>已訂位。</strong> 目前未查到最低消費、每人一杯飲料或開胃小菜費；可只預約座位</td><td>19:15 入店不受晚間縮短用餐時間限制；當日取消可能收取餐費</td></tr><tr><td>Menya ISHII</td><td>FastPass 開放未來 2 週；10/27 用餐可自 10/13 起預訂。¥390／人，非座位保證。</td><td>每筆最多 5 人；6 人需拆成 5+1。每人需點 1 碗麵，遲到 15 分鐘可能失去優先資格。</td></tr><tr><td>FUK COFFEE</td><td>祇園本店官方頁面未明確標示最低消費；是否需每人點 1 杯飲料尚無法完全確認</td><td>建議先以每人點 1 杯飲料估算，現場再確認</td></tr></tbody></table></section><div class="footer">Fukuoka Trip Plan｜Updated 2026/08/23｜Version 1.26</div>
 </div>
 </body>
 </html>
